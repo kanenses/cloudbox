@@ -8,24 +8,24 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 ## Tools Installed
 
 
-|                                                                 | Full Cloudbox | Feeder Cloudbox | Plex Cloudbox |
-|:--------------------------------------------------------------- |:-------------:|:---------------:|:-------------:|
-| [Docker][627bd283]                                              |       √       |        √        |       √       |
-| [Plex][10952c53] ([docker][d369f92b])                           |       √       |                 |       √       |
-| [PlexPy][363c0adc] ([docker][cda70c13])                         |       √       |                 |       √       |
-| [Plex_AutoScan][96e27fd1]                                       |       √       |                 |       √       |
-| [Sonarr][8ae81bb6] ([docker][fa005e4a])                         |       √       |        √        |               |
-| [Radarr][8211f62c] ([docker][5f7edfff])                         |       √       |        √        |               |
-| [NZBGet][2e2bad08] ([docker][a9b9645e])                         |       √       |        √        |               |
-| [NZBHydra][a0cc8c46] ([docker][50ba3cbb])                       |       √       |        √        |               |
-| [rTorrent][512b104c]/[ruTorrent][8d6ce857] ([docker][344a7c4b]) |       √       |        √        |               |
-| [Jackett][1caa43a0] ([docker][cab1a251])                        |       √       |        √        |               |
-| [Rclone][b4cef019]                                              |       √       |        √        |               |
-| [Plexdrive][0367302f]                                           |       √       |        √        |       √       |
-| [UnionFS-Fuse][6e8f308f]                                        |       √       |        √        |       √       |
-| [UnionFS_Cleaner][f20acc3e]                                     |       √       |        √        |               |
-| [Watchtower][a98faaaf]                                          |       √       |        √        |       √       |
-| Kernel, motd, sysctl, etc...                                    |       √       |        √        |       √       |
+|                                                                 | Full | Feeder | Plex |
+|:--------------------------------------------------------------- |:----:|:------:|:----:|
+| [Docker][627bd283]                                              |  √   |   √    |  √   |
+| [Plex][10952c53] ([docker][d369f92b])                           |  √   |        |  √   |
+| [PlexPy][363c0adc] ([docker][cda70c13])                         |  √   |        |  √   |
+| [Plex_AutoScan][96e27fd1]                                       |  √   |        |  √   |
+| [Sonarr][8ae81bb6] ([docker][fa005e4a])                         |  √   |   √    |      |
+| [Radarr][8211f62c] ([docker][5f7edfff])                         |  √   |   √    |      |
+| [NZBGet][2e2bad08] ([docker][a9b9645e])                         |  √   |   √    |      |
+| [NZBHydra][a0cc8c46] ([docker][50ba3cbb])                       |  √   |   √    |      |
+| [rTorrent][512b104c]/[ruTorrent][8d6ce857] ([docker][344a7c4b]) |  √   |   √    |      |
+| [Jackett][1caa43a0] ([docker][cab1a251])                        |  √   |   √    |      |
+| [Rclone][b4cef019]                                              |  √   |   √    |      |
+| [Plexdrive][0367302f]                                           |  √   |   √    |  √   |
+| [UnionFS-Fuse][6e8f308f]                                        |  √   |   √    |  √   |
+| [UnionFS_Cleaner][f20acc3e]                                     |  √   |   √    |      |
+| [Watchtower][a98faaaf]                                          |  √   |   √    |  √   |
+| Kernel, motd, sysctl, etc...                                    |  √   |   √    |  √   |
 
   [627bd283]: https://www.docker.com "Docker"
   [10952c53]: https://www.plex.tv "Plex"

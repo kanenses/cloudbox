@@ -8,24 +8,49 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 ## Tools Installed
 
 
-|                              | Full Cloudbox | Feeder Cloudbox | Plex Cloudbox |
-|:---------------------------- |:-------------:|:---------------:|:-------------:|
-| Docker                       |       √       |        √        |       √       |
-| Plex (docker)                |       √       |                 |       √       |
-| PlexPy (docker)              |       √       |                 |       √       |
-| Plex Autoscan                |       √       |                 |       √       |
-| Sonarr (docker)              |       √       |        √        |               |
-| Radarr (docker)              |       √       |        √        |               |
-| Nzbget (docker)              |       √       |        √        |               |
-| NZB Hydra (docker)           |       √       |        √        |               |
-| rTorrent/ruTorrent (docker)  |       √       |        √        |               |
-| Jackett (docker)             |       √       |        √        |               |
-| Rclone                       |       √       |        √        |               |
-| PlexDrive                    |       √       |        √        |       √       |
-| UnionFS                      |       √       |        √        |       √       |
-| UnionFS Cleaner              |       √       |        √        |               |
-| Watchtower (docker)          |       √       |        √        |       √       |
-| Kernel, motd, sysctl, etc... |       √       |        √        |       √       |
+|                                                                 | Full Cloudbox | Feeder Cloudbox | Plex Cloudbox |
+|:--------------------------------------------------------------- |:-------------:|:---------------:|:-------------:|
+| [Docker][627bd283]                                              |       √       |        √        |       √       |
+| [Plex][10952c53] ([docker][d369f92b])                           |       √       |                 |       √       |
+| [PlexPy][363c0adc] ([docker][cda70c13])                         |       √       |                 |       √       |
+| [Plex_AutoScan][96e27fd1]                                       |       √       |                 |       √       |
+| [Sonarr][8ae81bb6] ([docker][fa005e4a])                         |       √       |        √        |               |
+| [Radarr][8211f62c] ([docker][5f7edfff])                         |       √       |        √        |               |
+| [NZBGet][2e2bad08] ([docker][a9b9645e])                         |       √       |        √        |               |
+| [NZBHydra][a0cc8c46] ([docker][50ba3cbb])                       |       √       |        √        |               |
+| [rTorrent][512b104c]/[ruTorrent][8d6ce857] ([docker][344a7c4b]) |       √       |        √        |               |
+| [Jackett][1caa43a0] ([docker][cab1a251])                        |       √       |        √        |               |
+| [Rclone][b4cef019]                                              |       √       |        √        |               |
+| [Plexdrive][0367302f]                                           |       √       |        √        |       √       |
+| [UnionFS-Fuse][6e8f308f]                                        |       √       |        √        |       √       |
+| [UnionFS_Cleaner][f20acc3e]                                     |       √       |        √        |               |
+| [Watchtower][a98faaaf]                                          |       √       |        √        |       √       |
+| Kernel, motd, sysctl, etc...                                    |       √       |        √        |       √       |
+
+  [627bd283]: https://www.docker.com "Docker"
+  [10952c53]: https://www.plex.tv "Plex"
+  [d369f92b]: https://github.com/plexinc/pms-docker "Official Docker container for Plex Media Server"
+  [363c0adc]: https://github.com/JonnyWong16/plexpy "PlexPy"
+  [cda70c13]: https://github.com/linuxserver/docker-plexpy "linuxserver/plexpy"
+  [96e27fd1]: https://github.com/l3uddz/plex_autoscan "Plex_AutoScan"
+  [8ae81bb6]: https://sonarr.tv "Sonarr"
+  [fa005e4a]: https://github.com/linuxserver/docker-sonarr "linuxserver/sonarr"
+  [8211f62c]: https://radarr.video "Radarr"
+  [5f7edfff]: https://github.com/linuxserver/docker-radarr "linuxserver/radarr"
+  [2e2bad08]: https://nzbget.net "NZBGet"
+  [a9b9645e]: https://github.com/linuxserver/docker-nzbget "linuxserver/nzbget"
+  [a0cc8c46]: https://github.com/theotherp/nzbhydra "NZBHydra"
+  [50ba3cbb]: https://github.com/linuxserver/docker-hydra "linuxserver/hydra"
+  [512b104c]: https://github.com/rakshasa/rtorrent/wiki "rTorrent"
+  [8d6ce857]: https://github.com/Novik/ruTorrent "ruTorrent"
+  [344a7c4b]: https://github.com/linuxserver/docker-rutorrent "linuxserver/rutorrent"
+  [1caa43a0]: https://github.com/Jackett/Jackett "Jackett"
+  [cab1a251]: https://github.com/linuxserver/docker-jackett "linuxserver/jackett"
+  [b4cef019]: https://rclone.org "Rclone"
+  [0367302f]: https://github.com/dweidenfeld/plexdrive "Plexdrive"
+  [6e8f308f]: http://manpages.ubuntu.com/manpages/zesty/man8/unionfs.8.html "UnionFS-Fuse"
+  [f20acc3e]: https://github.com/l3uddz/unionfs_cleaner "UnionFS_Cleaner"
+  [a98faaaf]: https://github.com/v2tec/watchtower "Watchtower"
 
 
 

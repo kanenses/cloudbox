@@ -1,0 +1,7 @@
+ok so rebooted the machine
+mention that it installs fail2ban
+to protect your ssh login from ssh brute force bots
+and an assortment of tools
+nload, vnstat, htop, ctop, iostop
+iotop *
+etc

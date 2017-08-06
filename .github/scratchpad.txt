@@ -5,3 +5,8 @@ and an assortment of tools
 nload, vnstat, htop, ctop, iostop
 iotop *
 etc
+
+
+
+plex/radarr images auto update themselves on container start
+but watchtower will restart them if it sees an update while they are running, but only when they are idle

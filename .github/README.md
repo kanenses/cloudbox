@@ -22,6 +22,9 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 | [Jackett][1caa43a0] ([docker][cab1a251])                        |  √   |   √    |      |
 | [Rclone][b4cef019]                                              |  √   |   √    |      |
 | [Plexdrive][0367302f]                                           |  √   |   √    |  √   |
+| [PlexRequests][458fc748] ([docker][0044f8e1])                   |  √   |        |  √   |
+| [Organizr][d328b256] ([docker][1e468891])                       |  √   |   √    |  √   |
+| [Portainer][726e0b6f]                                           |  √   |   √    |  √   |
 | [UnionFS-Fuse][6e8f308f]                                        |  √   |   √    |  √   |
 | [UnionFS_Cleaner][f20acc3e]                                     |  √   |   √    |      |
 | [Watchtower][a98faaaf]                                          |  √   |   √    |  √   |
@@ -51,6 +54,11 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
   [6e8f308f]: http://manpages.ubuntu.com/manpages/zesty/man8/unionfs.8.html "UnionFS-Fuse"
   [f20acc3e]: https://github.com/l3uddz/unionfs_cleaner "UnionFS_Cleaner"
   [a98faaaf]: https://github.com/v2tec/watchtower "Watchtower"
+  [458fc748]: https://github.com/lokenx/plexrequests-meteor "PlexRequests"
+  [0044f8e1]: https://github.com/linuxserver/docker-plexrequests "linuxserver/plexrequests"
+  [d328b256]: https://github.com/causefx/Organizr "Organizr"
+  [1e468891]: https://github.com/linuxserver/docker-organizr "lsiocommunity/organizr"
+  [726e0b6f]: https://portainer.io "Portainer"
 
 
 

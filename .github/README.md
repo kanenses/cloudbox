@@ -1,4 +1,4 @@
-![Imgur](http://i.imgur.com/b5gCCnR.gifv)
+![Cloudbox](cloudbox-animated.gif)
 
 # Cloudbox
 

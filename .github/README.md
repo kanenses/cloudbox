@@ -1,3 +1,5 @@
+[Imgur](http://i.imgur.com/b5gCCnR.gifv)
+
 # Cloudbox
 
 Cloudbox is an Ansible playbook for deploying a cloud media server stack on an Ubuntu server with the use of Docker containers.

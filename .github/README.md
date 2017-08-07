@@ -1,4 +1,5 @@
-![Cloudbox](cloudbox-animated.gif =250x)
+<img src="cloudbox-animated.gif" width="200">
+
 
 # Cloudbox
 

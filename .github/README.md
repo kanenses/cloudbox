@@ -1,4 +1,4 @@
-![Cloudbox](cloudbox-animated.gif)
+![Cloudbox](cloudbox-animated.gif =250x)
 
 # Cloudbox
 

@@ -66,12 +66,10 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 
 ### Installing Ansible
 
-Run these commands:
+1. Run this command (v2.3.1.0 is stable):
 ```bash
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update
-sudo apt-get install ansible
+sudo apt-get install python-pip && sudo pip install ansible==2.3.1.0
+
 ```
 
 ### Cloning Git Project

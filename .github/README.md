@@ -14,8 +14,8 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 | [Plex][10952c53] ([docker][d369f92b])                           |  √   |        |  √   |
 | [PlexPy][363c0adc] ([docker][cda70c13])                         |  √   |        |  √   |
 | [Plex_AutoScan][96e27fd1]                                       |  √   |        |  √   |
-| [Sonarr][8ae81bb6] ([docker][fa005e4a])                         |  √   |   √    |      |
-| [Radarr][8211f62c] ([docker][5f7edfff])                         |  √   |   √    |      |
+| [Sonarr: develop][8ae81bb6] ([docker][fa005e4a])                         |  √   |   √    |      |
+| [Radarr: nightly][8211f62c] ([docker][5f7edfff])                         |  √   |   √    |      |
 | [NZBGet][2e2bad08] ([docker][a9b9645e])                         |  √   |   √    |      |
 | [NZBHydra][a0cc8c46] ([docker][50ba3cbb])                       |  √   |   √    |      |
 | [rTorrent][512b104c]/[ruTorrent][8d6ce857] ([docker][344a7c4b]) |  √   |   √    |      |
@@ -39,7 +39,7 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
   [8ae81bb6]: https://sonarr.tv "Sonarr"
   [fa005e4a]: https://github.com/linuxserver/docker-sonarr "linuxserver/sonarr"
   [8211f62c]: https://radarr.video "Radarr"
-  [5f7edfff]: https://github.com/linuxserver/docker-radarr "linuxserver/radarr"
+  [5f7edfff]: https://github.com/hotio/docker-radarr "hotio/radarr"
   [2e2bad08]: https://nzbget.net "NZBGet"
   [a9b9645e]: https://github.com/linuxserver/docker-nzbget "linuxserver/nzbget"
   [a0cc8c46]: https://github.com/theotherp/nzbhydra "NZBHydra"

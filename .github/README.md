@@ -62,56 +62,9 @@ Cloudbox is an Ansible playbook for deploying a cloud media server stack on an U
 
 
 
-## Installation
+## How To Guides
 
-### Installing Ansible
-
-Run the following command. Press `Y` when asked to confirm. 
-```
-sudo apt-get install python-pip && sudo pip install ansible==2.3.1.0
-```
-Note: Ansible v2.3.1.0 is the current stable version (v2.3.2.0 has a bug where docker_container state=stopped causes container to be removed).
-
-
-### Cloning Git Project
-
-1. Go to home folder:
-
-  ```bash
-  cd ~/
-  ```
-
-2. Clone project:
-
-  ```bash
-  git clone https://github.com/l3uddz/cloudbox
-  ```
-
-### Running the Ansible script
-
-1. Go into cloudbox folder
-
-  ```bash
-  cd ~/cloudbox
-  ```
-
-2. Decide on what type of Cloudbox you want: `full`,`feeder`, or `plex` .
-
-3. Run the following Ansible command, with the preferred option from #2 (`--tag "option"`) - quotes not needed.
-
-  Example:
-
-  ```bash
-  sudo ansible-playbook cloudbox.yml --tag full
-  ```
-
-## Customization
-
-See wiki.
-
-## Usage
-
-TODO: Write usage instructions
+See the [wiki](https://github.com/l3uddz/cloudbox/wiki) page.
 
 ## Contributing
 

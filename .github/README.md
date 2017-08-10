@@ -92,7 +92,7 @@ Note: Ansible v2.3.1.0 is the current stable version (v2.3.2.0 has a bug where d
 1. Go into cloudbox folder
 
   ```bash
-  cd cloudbox
+  cd ~/cloudbox
   ```
 
 2. Decide on what type of Cloudbox you want: `full`,`feeder`, or `plex` .

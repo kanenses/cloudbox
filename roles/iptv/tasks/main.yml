@@ -9,16 +9,16 @@
     register: gid
     when: gid is not defined
 
+  - name: Stop and remove any existing container
+    docker_container:
+      name: tvheadend
+      state: absent
+
   - name: Create required directories
     file: "path={{item}} state=directory mode=0775 owner={{user}} group={{user}} recurse=true"
     with_items:
       - /opt/tvheadend
       - /opt/tvheadend/data
-
-  - name: Stop and remove any existing container
-    docker_container:
-      name: tvheadend
-      state: absent
 
   - name: Create and start tvheadend container
     docker_container:
@@ -44,3 +44,26 @@
             - tvheadend
       restart_policy: always
       state: started
+
+  - name: Wait 10 seconds
+    wait_for:
+      timeout: 10
+
+  - name: tvheadend apt update
+    shell: "docker exec -it tvheadend apk update"
+
+  - name: tvheadend apt install jq
+    shell: "docker exec -it tvheadend apk add jq"
+
+  - name: Check sstv-request-token.sh exists
+    stat:
+      path: /opt/tvheadend/sstv-request-token.sh
+    register: sstv_request_token
+
+  - name: Import sstv-request-token.sh
+    copy: "src=sstv-request-token.sh dest=/opt/tvheadend/sstv-request-token.sh force=yes owner={{user}} group={{user}} mode=0775"
+    when: sstv_request_token.stat.exists == False
+
+  - name: Import sstv-play.sh
+    copy: "src=sstv-play.sh dest=/opt/tvheadend/sstv-play.sh force=yes owner={{user}} group={{user}} mode=0775"
+    

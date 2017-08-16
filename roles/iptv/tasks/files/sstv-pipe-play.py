@@ -53,11 +53,11 @@ def get_auth_token(user, passwd, site):
     })
     resp = urlopen(url).read().decode("utf-8")
     data = loads(resp)
-    if 'hash' not in data:
+    if 'hash' not in data or 'valid' not in data:
         sys.exit("There was no hash auth token returned from auth.smoothstreams.tv...")
     else:
-        token['hash'] = data['hash'].rstrip('=') + "=="
-        token['expires'] = (datetime.now() + timedelta(hours=4)).strftime("%Y-%m-%d %H:%M:%S.%f")
+        token['hash'] = data['hash']
+        token['expires'] = (datetime.now() + timedelta(minutes=data['valid'])).strftime("%Y-%m-%d %H:%M:%S.%f")
         return
 
 
@@ -79,7 +79,7 @@ if __name__ == "__main__":
         dump_token()
     else:
         # check / renew token
-        if datetime.now() >= datetime.strptime(token['expires'], "%Y-%m-%d %H:%M:%S.%f"):
+        if datetime.now() > datetime.strptime(token['expires'], "%Y-%m-%d %H:%M:%S.%f"):
             # token is expired, renew
             get_auth_token(USER, PASS, SITE)
             dump_token()

@@ -19,7 +19,7 @@ def build_playlist():
 
 
 def fetch_epg():
-    url = "http://sstv.fog.pt/utc/xmltv.xml"
+    url = "http://sstv.fog.pt/feed.xml"
     resp = urlopen(url).read().decode("utf-8")
     with open(EPG_PATH, "w") as fp:
         fp.write(resp)

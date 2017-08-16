@@ -85,8 +85,8 @@ if __name__ == "__main__":
             dump_token()
 
     # generate stream url
-    url = "http://%s.smoothstreams.tv:9100/%s/ch%sq%s.stream/playlist.m3u8?wmsAuthSign=%s" % (
-        SRVR, SITE, channel, str(QLTY), token['hash'])
+    url = "http://%s.SmoothStreams.tv:9100/%s/ch%sq%d.stream/playlist.m3u8?wmsAuthSign=%s" % (
+        SRVR, SITE, channel, QLTY, token['hash'])
 
     # pipe ffmpeg
     os.system("ffmpeg -i %s -codec copy -loglevel error -f mpegts pipe:1" % url)

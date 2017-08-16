@@ -89,4 +89,5 @@ if __name__ == "__main__":
         SRVR, SITE, channel, QLTY, token['hash'])
 
     # pipe ffmpeg
-    os.system("ffmpeg -i %s -codec copy -loglevel error -f mpegts pipe:1" % url)
+    os.system(
+        "ffmpeg -i %s -codec copy -loglevel info -bsf:v h264_mp4toannexb -f mpegts -tune zerolatency pipe:1" % url)

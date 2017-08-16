@@ -45,25 +45,15 @@
       restart_policy: always
       state: started
 
-  - name: Wait 10 seconds
-    wait_for:
-      timeout: 10
-
-  - name: tvheadend apt update
-    shell: "docker exec -it tvheadend apk update"
-
-  - name: tvheadend apt install jq
-    shell: "docker exec -it tvheadend apk add jq"
-
-  - name: Check sstv-request-token.sh exists
+  - name: Check sstv-pipe-play.py exists
     stat:
-      path: /opt/tvheadend/sstv-request-token.sh
-    register: sstv_request_token
+      path: /opt/tvheadend/sstv-pipe-play.py
+    register: sstv_pipe_play
 
-  - name: Import sstv-request-token.sh
-    copy: "src=sstv-request-token.sh dest=/opt/tvheadend/sstv-request-token.sh force=yes owner={{user}} group={{user}} mode=0775"
-    when: sstv_request_token.stat.exists == False
+  - name: Import sstv-pipe-play.py
+    copy: "src=sstv-pipe-play.py dest=/opt/tvheadend/sstv-pipe-play.py force=yes owner={{user}} group={{user}} mode=0775"
+    when: sstv_pipe_play.stat.exists == False
 
-  - name: Import sstv-play.sh
-    copy: "src=sstv-play.sh dest=/opt/tvheadend/sstv-play.sh force=yes owner={{user}} group={{user}} mode=0775"
+  - name: Import sstv-pipe-playlist.py
+    copy: "src=sstv-pipe-playlist.py dest=/opt/tvheadend/sstv-pipe-playlist.py force=yes owner={{user}} group={{user}} mode=0775"
     

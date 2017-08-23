@@ -1,5 +1,10 @@
 <img src="cloudbox-animated.gif" loop=infinite width="200" alt="Cloudbox">
 
+better..
+
+
+<img src="https://j.gifs.com/O7OWvp.gif" loop=infinite width="200" alt="Cloudbox">
+
 Cloudbox is an Ansible playbook for deploying a cloud media server stack on an Ubuntu server with the use of Docker containers.
 
 This project is limited to specifically 16.04 Ubuntu LTS, designed for fresh systems. Do not install on an already setup server, or prepare for unintended consequences.

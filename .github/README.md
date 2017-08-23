@@ -3,7 +3,7 @@
 better..
 
 
-<img src="https://j.gifs.com/O7OWvp.gif" loop==-1 width="200" alt="Cloudbox">
+<img src="https://j.gifs.com/O7OWvp.gif" width="200" alt="Cloudbox">
 
 Cloudbox is an Ansible playbook for deploying a cloud media server stack on an Ubuntu server with the use of Docker containers.
 

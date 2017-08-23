@@ -15,12 +15,12 @@ _If you find this this project helpful, feel free to make a small [donation via 
 | [Plex][10952c53] ([docker][d369f92b])                           |  √   |        |  √   |
 | [PlexPy][363c0adc] ([docker][cda70c13])                         |  √   |        |  √   |
 | [Plex_AutoScan][96e27fd1]                                       |  √   |        |  √   |
-| [Sonarr: develop][8ae81bb6] ([docker][fa005e4a])                         |  √   |   √    |      |
-| [Radarr: nightly][8211f62c] ([docker][5f7edfff])                         |  √   |   √    |      |
+| [Sonarr: develop][8ae81bb6] ([docker][a9b9645e])                |  √   |   √    |      |
+| [Radarr: nightly][8211f62c] ([docker][a9b9645e])                |  √   |   √    |      |
 | [NZBGet][2e2bad08] ([docker][a9b9645e])                         |  √   |   √    |      |
 | [NZBHydra][a0cc8c46] ([docker][50ba3cbb])                       |  √   |   √    |      |
 | [rTorrent][512b104c]/[ruTorrent][8d6ce857] ([docker][344a7c4b]) |  √   |   √    |      |
-| [Jackett][1caa43a0] ([docker][cab1a251])                        |  √   |   √    |      |
+| [Jackett][1caa43a0] ([docker][a9b9645e])                        |  √   |   √    |      |
 | [Rclone][b4cef019]                                              |  √   |   √    |      |
 | [Plexdrive][0367302f]                                           |  √   |   √    |  √   |
 | [PlexRequests][458fc748] ([docker][0044f8e1])                   |  √   |        |  √   |
@@ -38,18 +38,14 @@ _If you find this this project helpful, feel free to make a small [donation via 
   [cda70c13]: https://github.com/linuxserver/docker-plexpy "linuxserver/plexpy"
   [96e27fd1]: https://github.com/l3uddz/plex_autoscan "Plex_AutoScan"
   [8ae81bb6]: https://sonarr.tv "Sonarr"
-  [fa005e4a]: https://github.com/linuxserver/docker-sonarr "linuxserver/sonarr"
   [8211f62c]: https://radarr.video "Radarr"
-  [5f7edfff]: https://github.com/hotio/docker-radarr "hotio/radarr"
   [2e2bad08]: https://nzbget.net "NZBGet"
-  [a9b9645e]: https://github.com/linuxserver/docker-nzbget "linuxserver/nzbget"
   [a0cc8c46]: https://github.com/theotherp/nzbhydra "NZBHydra"
   [50ba3cbb]: https://github.com/linuxserver/docker-hydra "linuxserver/hydra"
   [512b104c]: https://github.com/rakshasa/rtorrent/wiki "rTorrent"
   [8d6ce857]: https://github.com/Novik/ruTorrent "ruTorrent"
   [344a7c4b]: https://github.com/linuxserver/docker-rutorrent "linuxserver/rutorrent"
   [1caa43a0]: https://github.com/Jackett/Jackett "Jackett"
-  [cab1a251]: https://github.com/linuxserver/docker-jackett "linuxserver/jackett"
   [b4cef019]: https://rclone.org "Rclone"
   [0367302f]: https://github.com/dweidenfeld/plexdrive "Plexdrive"
   [6e8f308f]: http://manpages.ubuntu.com/manpages/zesty/man8/unionfs.8.html "UnionFS-Fuse"
@@ -60,6 +56,8 @@ _If you find this this project helpful, feel free to make a small [donation via 
   [d328b256]: https://github.com/causefx/Organizr "Organizr"
   [1e468891]: https://github.com/linuxserver/docker-organizr "lsiocommunity/organizr"
   [726e0b6f]: https://portainer.io "Portainer"
+  [a9b9645e]: https://github.com/hotio/docker-suitarr "hotio/suitarr"
+
 
 
 

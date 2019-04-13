@@ -13,6 +13,7 @@
     - { role: unionfs, tags: ['full', 'feeder', 'plex'] }
     - { role: plexdrive, tags: ['full', 'feeder', 'plex'] }
     - { role: rclone, tags: ['full', 'feeder', 'plex'] }
+    - { role: ubuntuxfce, tags: ['full', 'feeder', 'plex'] }    
     - { role: unionfs_cleaner, tags: ['full', 'feeder']}
     - { role: nzbget, tags: ['full', 'feeder'] }
     - { role: rutorrent, tags: ['full', 'feeder'] }
